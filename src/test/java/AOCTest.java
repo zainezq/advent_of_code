@@ -133,14 +133,24 @@ public class AOCTest {
         logTime("testDay13");
     }
 
-    /*
+
     @Test
     public void testDay14() {
         startTime = System.nanoTime();
         Day day14 = new Y24D14();
-        Assertions.assertEquals(0, day14.part1());  // Expected result for part 1
-        Assertions.assertEquals(0, day14.part2()); // Expected result for part 2
+        Assertions.assertEquals(229980828, day14.part1());  // Expected result for part 1
+        Assertions.assertEquals(7132, day14.part2()); // Expected result for part 2
         logTime("testDay14");
+    }
+
+        /*
+    @Test
+    public void testDay15() {
+        startTime = System.nanoTime();
+        Day day15 = new Y24D15();
+        Assertions.assertEquals(0, day15.part1());  // Expected result for part 1
+        Assertions.assertEquals(0, day15.part2()); // Expected result for part 2
+        logTime("testDay15");
     }
     */
 
@@ -188,7 +198,7 @@ public class AOCTest {
         test.testDay11();
         test.testDay12();
         test.testDay13();
-        // test.testDay14();
+        test.testDay14();
 
         long totalDuration = System.nanoTime() - totalStartTime;
         double totalDurationInMs = totalDuration / 1e6;  // Convert to milliseconds

@@ -4,7 +4,7 @@ import z.aoc.util.Day;
 
 public class CurrentDay {
     static int year = 24;
-    static int day = 12;
+    static int day = 14;
 
     public static void main(String[] args) {
         Day dayInstance = getDayInstance(year, day);
@@ -28,6 +28,7 @@ public class CurrentDay {
                 case 12 -> new Y24D12();
                 case 13 -> new Y24D13();
                 case 14 -> new Y24D14();
+                case 15 -> new Y24D15();
                 default -> throw new RuntimeException("No implementation for day " + day);
             };
         } else {
