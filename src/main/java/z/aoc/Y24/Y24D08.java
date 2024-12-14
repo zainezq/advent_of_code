@@ -25,18 +25,18 @@ public class Y24D08 extends Day {
 
     public static int countUniqueAntinodes(List<String> map) {
         int rows = map.size();
-        int cols = map.get(0).length();
+        int cols = map.getFirst().length();
 
         // Store antenna locations by their frequency
         Map<Character, List<int[]>> antennas = new HashMap<>();
 
         // Parse the map to find antennas
-        for (int r = 0; r < rows; r++) {
-            for (int c = 0; c < cols; c++) {
-                char ch = map.get(r).charAt(c);
+        for (int rowy = 0; rowy < rows; rowy++) {
+            for (int columny = 0; columny < cols; columny++) {
+                char ch = map.get(rowy).charAt(columny);
                 if (Character.isLetterOrDigit(ch)) {
                     antennas.putIfAbsent(ch, new ArrayList<>());
-                    antennas.get(ch).add(new int[]{r, c});
+                    antennas.get(ch).add(new int[]{rowy, columny});
                 }
             }
         }
@@ -85,12 +85,12 @@ public class Y24D08 extends Day {
         Map<Character, List<int[]>> antennas = new HashMap<>();
 
         // Parse the map to find antennas
-        for (int r = 0; r < rows; r++) {
-            for (int c = 0; c < cols; c++) {
-                char ch = map.get(r).charAt(c);
+        for (int rowy = 0; rowy < rows; rowy++) {
+            for (int columny = 0; columny < cols; columny++) {
+                char ch = map.get(rowy).charAt(columny);
                 if (Character.isLetterOrDigit(ch)) {
                     antennas.putIfAbsent(ch, new ArrayList<>());
-                    antennas.get(ch).add(new int[]{r, c});
+                    antennas.get(ch).add(new int[]{rowy, columny});
                 }
             }
         }
