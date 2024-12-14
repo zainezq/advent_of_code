@@ -17,7 +17,7 @@ public class AOCTest {
     }
 
     @Test
-    public void testDay1() {
+    public void testDay01() {
         startTime = System.nanoTime();  // Start timing
         Day day1 = new Y24D01();
         Assertions.assertEquals(1580061, day1.part1()); // Expected result for part 1
@@ -26,7 +26,7 @@ public class AOCTest {
     }
 
     @Test
-    public void testDay2() {
+    public void testDay02() {
         startTime = System.nanoTime();
         Day day2 = new Y24D02();
         Assertions.assertEquals(559, day2.part1());  // Expected result for part 1
@@ -35,7 +35,7 @@ public class AOCTest {
     }
 
     @Test
-    public void testDay3() {
+    public void testDay03() {
         startTime = System.nanoTime();
         Day day3 = new Y24D03();
         Assertions.assertEquals(162813399, day3.part1());  // Expected result for part 1
@@ -44,7 +44,7 @@ public class AOCTest {
     }
 
     @Test
-    public void testDay4() {
+    public void testDay04() {
         startTime = System.nanoTime();
         Day day4 = new Y24D04();
         Assertions.assertEquals(2573, day4.part1());  // Expected result for part 1
@@ -53,7 +53,7 @@ public class AOCTest {
     }
 
     @Test
-    public void testDay5() {
+    public void testDay05() {
         startTime = System.nanoTime();
         Day day5 = new Y24D05();
         Assertions.assertEquals(4569, day5.part1());  // Expected result for part 1
@@ -62,7 +62,7 @@ public class AOCTest {
     }
 
     @Test
-    public void testDay6() {
+    public void testDay06() {
         startTime = System.nanoTime();
         Day day6 = new Y24D06();
         Assertions.assertEquals(5331, day6.part1());  // Expected result for part 1
@@ -71,7 +71,7 @@ public class AOCTest {
     }
 
     @Test
-    public void testDay7() {
+    public void testDay07() {
         startTime = System.nanoTime();
         Day day7 = new Y24D07();
         Assertions.assertEquals(267566105056L, day7.part1());  // Expected result for part 1
@@ -80,7 +80,7 @@ public class AOCTest {
     }
 
     @Test
-    public void testDay8() {
+    public void testDay08() {
         startTime = System.nanoTime();
         Day day8 = new Y24D08();
         Assertions.assertEquals(354, day8.part1());  // Expected result for part 1
@@ -89,7 +89,7 @@ public class AOCTest {
     }
 
     @Test
-    public void testDay9() {
+    public void testDay09() {
         startTime = System.nanoTime();
         Day day9 = new Y24D09();
         Assertions.assertEquals(new BigInteger("6341711060162"), day9.part1()); // Expect BigInteger for part 1
@@ -133,7 +133,6 @@ public class AOCTest {
         logTime("testDay13");
     }
 
-    // Uncomment when Day 14 test is ready
     /*
     @Test
     public void testDay14() {
@@ -145,20 +144,46 @@ public class AOCTest {
     }
     */
 
-    public static void main(String[] args) {
+/*
+    @Test
+    public void timing(){
         long totalStartTime = System.nanoTime();
-
         // Run all tests manually
         AOCTest test = new AOCTest();
-        test.testDay1();
-        test.testDay2();
-        test.testDay3();
-        test.testDay4();
-        test.testDay5();
-        test.testDay6();
-        test.testDay7();
-        test.testDay8();
-        test.testDay9();
+        test.testDay01();
+        test.testDay02();
+        test.testDay03();
+        test.testDay04();
+        test.testDay05();
+        test.testDay06();
+        test.testDay07();
+        test.testDay08();
+        test.testDay09();
+        test.testDay10();
+        test.testDay11();
+        test.testDay12();
+        test.testDay13();
+        // test.testDay14();
+        long totalDuration = System.nanoTime() - totalStartTime;
+        double totalDurationInMs = totalDuration / 1e6;  // Convert to milliseconds
+        System.out.println("Total time for all tests: " + totalDurationInMs + " ms");
+
+    }*/
+
+    public static void main(String[] args) {
+
+        long totalStartTime = System.nanoTime();
+        // Run all tests manually
+        AOCTest test = new AOCTest();
+        test.testDay01();
+        test.testDay02();
+        test.testDay03();
+        test.testDay04();
+        test.testDay05();
+        test.testDay06();
+        test.testDay07();
+        test.testDay08();
+        test.testDay09();
         test.testDay10();
         test.testDay11();
         test.testDay12();
